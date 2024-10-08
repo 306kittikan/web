@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมุดรวมรุ่น - รายชื่อรุ่นทั้งหมด</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-right navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">สมุดรวมรุ่น</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">รายชื่อรุ่น</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">รายชื่อรุ่นทั้งหมด</h1>
+        <div class="row" id="classList">
+        </div>
+    </div>
+
+    <!-- ส่วนที่แสดงข้อมูลส่วนบุคคล -->
+    <div class="modal fade" id="personalInfoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="personName"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWestySFdjEYa_HB1RMZVgx07ds7WXNUpLaQ&s" alt="รูปนักศึกษา" width="315" height="150">
+                    <p><strong>ปีที่จบการศึกษา:</strong> <span id="graduationYear"></span></p>
+                    <p><strong>ที่อยู่:</strong> <span id="stay"></span></p>
+                    <p><strong>อีเมล:</strong> <span id="email"></span></p>
+                    <p><strong>อาชีพปัจจุบัน:</strong> <span id="occupation"></span></p>
+                    <p><strong>เบอร์โทร:</strong> <span id="phone"></span></p>
+                    <p><strong>ข้อความถึงเพื่อนร่วมรุ่น:</strong> <span id="message"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
